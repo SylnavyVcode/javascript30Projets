@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  font-style: normal;
+}
+
+body {
+  color: #ffffff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  padding: 0;
+  min-height: 100vh;
+  background-color: rgb(32, 32, 185);
+}
+
+/* #sectionForm {
+  background-color: white;
+  width: 400px;
+  padding: 5em 2em;
+  border-radius: 0.5em;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+} */
+
+#sectionForm {
+  width: min(90%, 40em);
+  background-color: rgb(36, 42, 44);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 2em;
+  border-radius: 0.5em;
+}
+.inputForm {
+  display: block;
+  width: 100%;
+}
+
+.inputGroup {
+  margin-bottom: 10px;
+}
+
+#resultatBoxShadow {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  margin: 2em auto;
+}
+
+#color {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+
+}
+.groupBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.groupBtn input {
+  background-color: aliceblue;
+  width: 100%;
+  color: rgb(2, 2, 2);
+  border: 0.1em solid rgb(11, 11, 12);
+  padding: 0.9em;
+  margin-top: 2.5em;
+  margin-right: 0.5em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#btnSubmit {
+  background-color: rgb(32, 32, 185);
+  width: 20%;
+  color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 2.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnSubmit:hover {
+  background-color: rgb(20, 20, 120);
+}
+
+#username {
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  border: 0.2em solid #080808;
+  border-radius: 5px;
+  border-radius: 5px;
+}
+
+#username:focus {
+  border-color: rgb(32, 32, 185);
+  outline: none;
+}
+#form label {
+  font-weight: bold;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}

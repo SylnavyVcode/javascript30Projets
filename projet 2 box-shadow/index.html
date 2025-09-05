@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>projet 1 JS</title>
+  </head>
+  <body>
+    <main>
+      <section id="sectionForm">
+        <div id="resultatBoxShadow">
+          <div class="box"></div>
+        </div>
+        <div id="form">
+          <div class="inputGroup">
+            <label for="shadowHorizontal">Ombre Horizontale </label>
+            <input
+              oninput="Input()"
+              class="inputForm"
+              type="range"
+              min="-50"
+              max="50"
+              id="shadowHorizontal"
+              name="shadowHorizontal"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="VerticalShadow">Ombre Verticale</label>
+            <input
+              oninput="Input()"
+              class="inputForm"
+              type="range"
+              min="-50"
+              max="50"
+              id="VerticalShadow"
+              name="VerticalShadow"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="BlurRadius">Blur radius</label>
+            <input
+              oninput="Input()"
+              class="inputForm"
+              type="range"
+              min="-50"
+              max="50"
+              type=""
+              id="BlurRadius"
+              name="BlurRadius"
+            />
+          </div>
+          <div class="inputGroup">
+            <label for="spreadRadius">Spread Radius</label>
+            <input
+              oninput="Input()"
+              class="inputForm"
+              type="range"
+              max="50"
+              id="spreadRadius"
+              name="spreadRadius"
+            />
+          </div>
+
+          <div>
+            <label for="color">Couleur de l'ombre</label>
+            <input oninput="Input()" type="color" id="color" name="color" />
+          </div>
+          <div class="inputGroup">
+            <label for="opacity">Opacité de la cours de l'ombre</label>
+            <input
+              oninput="Input()"
+              class="inputForm"
+              type="range"
+              id="opacity"
+              name="opacity"
+            />
+          </div>
+          <div>
+            <label for="inset">Inset Ombre</label>
+            <input oninput="Input()" type="checkbox" id="inset" name="inset" />
+          </div>
+          <div class="groupBtn">
+            <input disabled id="content-final" name="content-final" />
+
+            <button onclick="copieText()" id="btnSubmit">Copier</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
