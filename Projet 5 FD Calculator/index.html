@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation 100h - Algorithmique & Python</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="fd-calculator">
+      <h1>SV Calculatrice</h1>
+
+      <input type="text" id="display" placeholder="0" disabled />
+      <input type="text" id="resultat" placeholder="" disabled />
+
+      <div class="buttons">
+        <section id="functionBtn">
+          <button class="function" id="sqrt">√</button>
+          <button class="function" id="square">x²</button>
+          <button class="function" id="cube">x³</button>
+          <button class="function" id="power">xʸ</button>
+          <button class="function" id="factorial">n!</button>
+          <button class="function" id="log">log</button>
+          <button class="function" id="ln">ln</button>
+          <button class="function" id="exp">eˣ</button>
+          <button class="function" id="sin">sin</button>
+          <button class="function" id="cos">cos</button>
+          <button class="function" id="tan">tan</button>
+          <button class="function" id="asin">asin</button>
+          <button class="function" id="acos">acos</button>
+          <button class="function" id="atan">atan</button>
+          <button class="function" id="pi">π</button>
+          <button class="function" id="e">e</button>
+          <button class="function" id="mod">mod</button>
+          <button class="function" id="reciprocal">1/x</button>
+          <button class="function" id="percent">%</button>
+          <!-- btn Combinaison -->
+        </section>
+        <section id="simpleBtn">
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="operator" data-value="/">/</button>
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="operator" data-value="*">*</button>
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="operator" data-value="-">-</button>
+          <button class="btn" data-value="0">0</button>
+          <button class="btn" data-value=".">.</button>
+          <button id="negate">±</button>
+          <button class="operator" data-value="+">+</button>
+          <button id="enterParenthese">(</button>
+          <button id="outerParenthese">)</button>
+          <button id="clear">C</button>
+          <button id="backspace">⌫</button>
+          <button id="equals">=</button>
+        </section>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

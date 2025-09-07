@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+/* calculator style */
+
+/* section calculator */
+
+.fd-calculator {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 370px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* sortie input caltulator display */
+#display {
+  width: 100%;
+  height: 70px;
+  background: #222;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px;
+  overflow-x: auto;
+}
+
+#resultat {
+  width: 100%;
+  height: 50px;
+  background: #222;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+/* section button calculator */
+.buttons > #functionBtn {
+  display: none;
+  grid-template-columns: repeat(4, 3frs);
+  height: 50px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons > #simpleBtn {
+  display: grid;
+  grid-template-columns: repeat(4, 3frs);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  height: 60px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background: #0f0f0f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* style des boutons spécifiques */
+
+.operator {
+  background: #ff9500;
+  color: #000000;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.operator:hover {
+  background: #e08900;
+}
+
+/* equal doit prendre toute la ligne */
+#equals {
+  border: none;
+  border-radius: 5px;
+  background: #34c759;
+  color: #000000;
+  grid-column: span 4;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#equals:hover {
+  background: #28a745;
+}
