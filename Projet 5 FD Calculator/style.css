@@ -23,11 +23,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
-  width: 370px;
+  width: 420px;
+  height: 100%;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 /* sortie input caltulator display */
@@ -50,26 +51,31 @@ body {
   background: #222;
   color: #fff;
   font-size: 2em;
-  text-align: right;
+  text-align: center;
   padding: 5px;
+  padding-left: 10px;
   border-radius: 0px 0px 5px 5px;
   margin-bottom: 20px;
   overflow-x: auto;
 }
 
 /* section button calculator */
-.buttons > #functionBtn {
-  display: none;
-  grid-template-columns: repeat(4, 3frs);
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   height: 50px;
-  gap: 10px;
+  gap: 5px;
   margin-bottom: 10px;
 }
 
-.buttons > #simpleBtn {
+/* .buttons > #simpleBtn {
   display: grid;
   grid-template-columns: repeat(4, 3frs);
   gap: 10px;
+} */
+
+.yessecond {
+  display: none !important;
 }
 
 button {
@@ -107,7 +113,7 @@ button:hover {
   border-radius: 5px;
   background: #34c759;
   color: #000000;
-  grid-column: span 4;
+  /* grid-column: span 4; */
   font-size: 1.5em;
   font-weight: bold;
 }
